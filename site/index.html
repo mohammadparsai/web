@@ -1,16 +1,131 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Hello World!</title>
+
+<style>
+
+header ul{
+	list-style: none;
+}
+
+li > a:visited, li > a:link{
+	text-decoration: none;
+	color: white;
+	background-color: green;
+	border: 1px solid blue;
+
+	display: block;
+	width: 200px;
+	text-align: center;
+	margin-bottom: 1px;
+
+}
+
+li > a:hover, li > a:active {
+
+	background-color: red;
+
+}
+
+
+ol li:nth-child(3) {
+	font-style: italic;
+}
+
+ol li:nth-child(3):hover {
+
+	font-size: 20;
+	color:red;
+}
+
+/* =========================== */
+
+h1 {
+	font-size: 40px;
+	color: black;
+}
+
+h1,h2 {
+	font-weight: bolder;
+
+}
+
+p > span {
+	text-decoration: underline;
+
+}
+
+
+
+.blue {
+	color: blue;
+	font-size: 18;
+
+}
+
+.highlight {
+	font-style: italic;
+	font-weight: bold;
+	background-color: yellow;
+}
+
+
+/* when an element has both blue & highlight classes  */
+blue.highlight {
+	color: blue;
+	font-size: 18;
+	font-style: italic;
+	font-weight: bold;
+	background-color: yellow;
+}
+
+
+
+
+
+/*not very useful */
+#vital {
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+	background-color: red;
+
+}
+
+
+/* COMMENT: is like java and js */
+
+
+
+
+</style>
+
 </head>
+
+
+<header>
+	<h1>Hello World! This is the main HEADING, it's vital&nbsp;for&nbsp;SEO!</h1>
+
+	<ul>
+		<li><a href="http://www.pishronovin.ir" target="_blank">Pishro Novin</a></li>
+		<li><a href="http://www.google.com" target="_blank">Google</a></li>
+		<li><a href="http://www.ubuntu.com" target="_blank">Ubuntu</a></li>
+		<li><a href="http://www.apple.com" target="_blank">Apple</a></li>
+
+	</ul>
+
+</header>
+
 <body>
 
-<h1>Hello World! This is the main HEADING, it's vital&nbsp;for&nbsp;SEO!</h1>
+	<h2>Second heading... less important"</h2>
 
-<p>
-My favorite delicious list:	
-</p>
+	<p class="highlight">
+		My favorite delicious list:
+	</p>
 
 
 
@@ -22,11 +137,11 @@ My favorite delicious list:
 	<li>Chololate</li>
 		<ol>
 			<li>Dark</li>
-			<li>Milky</li>
+			<li id="vital">Milky</li>
 			<li>Swiss</li>
 			<li>White</li>
 		</ol>
-	<li>Biscuit</li>		
+	<li>Biscuit</li>
 
 </ul>
 </section>
@@ -39,7 +154,7 @@ My favorite delicious list:
 
 	<a href="tst.html" title="same dir link"> This is an internal link </a>
 
-	<a href="tst.html" title="same dir link by div"> 
+	<a href="tst.html" title="same dir link by div">
 	<div> This is also an internal link but with DIV (a Block level) tag </div>
 	</a>
 
@@ -61,10 +176,10 @@ My favorite delicious list:
 
 
 <section>
-<p> 
-HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and latest major version of HTML that is a World Wide Web Consortium (W3C) recommendation. The current specification is known as the HTML Living Standard and is maintained by a consortium of the major browser vendors (Apple, Google, Mozilla, and Microsoft), the Web Hypertext Application Technology Working Group (WHATWG).
+<p>
+<span id="vital">HTML5</span> is a markup language used for structuringand presenting content on the World Wide Web. It is the fifth and latest major version of HTML that is a World Wide Web Consortium (W3C) recommendation. The current specification is known as the HTML Living Standard and is maintained by a consortium of the major browser vendors (Apple, Google, Mozilla, and Microsoft), the Web Hypertext Application Technology Working Group (WHATWG).
 
-HTML5 was first released in public-facing form on 22 January 2008,[3] with a major update and "W3C Recommendation" status in October 2014.[2][4] Its goals were to improve the language with support for the latest multimedia and other new features; to keep the language both easily readable by humans and consistently understood by computers and devices such as web browsers, parsers, etc., without XHTML's rigidity; and to remain backward-compatible with older software. HTML5 is intended to subsume not only HTML 4 but also XHTML 1 and DOM Level 2 HTML.[5]
+<span class="blue highlight"> HTML5 was first released</span> in public-facing form on 22 January 2008,[3] with a major update and "W3C Recommendation" status in October 2014.[2][4] Its goals were to improve the language with support for the latest multimedia and other new features; to keep the language both easily readable by humans and consistently understood by computers and devices such as web browsers, parsers, etc., without XHTML's rigidity; and to remain backward-compatible with older software. HTML5 is intended to subsume not only HTML 4 but also XHTML 1 and DOM Level 2 HTML.[5]
 
 HTML5 includes detailed processing models to encourage more interoperable implementations; it extends, improves and rationalizes the markup available for documents and introduces markup and application programming interfaces (APIs) for complex web applications.[6] For the same reasons, HTML5 is also a candidate for cross-platform mobile applications, because it includes features designed with low-powered devices in mind.
 
@@ -72,7 +187,7 @@ HTML5 includes detailed processing models to encourage more interoperable implem
 <span id="2ndid">Many new syntactic features</span> are included. To natively include and handle multimedia and graphical content, the new elements were added, and support for scalable vector graphics (SVG) content and MathML for mathematical formulas was also added. To enrich the semantic content of documents, new page structure elements such as were changed, redefined, or standardized. The APIs and Document Object Model (DOM) are now fundamental parts of the HTML5 specification,[6] and HTML5 also better defines the processing for any invalid documents.[7]
 HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and latest major version of HTML that is a World Wide Web Consortium (W3C) recommendation. The current specification is known as the HTML Living Standard and is maintained by a consortium of the major browser vendors (Apple, Google, Mozilla, and Microsoft), the Web Hypertext Application Technology Working Group (WHATWG).
 
-HTML5 was first released in public-facing form on 22 January 2008,[3] with a major update and "W3C Recommendation" status in October 2014.[2][4] Its goals were to improve the language with support for the latest multimedia and other new features; to keep the language both easily readable by humans and consistently understood by computers and devices such as web browsers, parsers, etc., without XHTML's rigidity; and to remain backward-compatible with older software. HTML5 is intended to subsume not only HTML 4 but also XHTML 1 and DOM Level 2 HTML.[5]
+<span>HTML5 was first released in public-facing form on 22 January 2008</span>,[3] with a major update and "W3C Recommendation" status in October 2014.[2][4] Its goals were to improve the language with support for the latest multimedia and other new features; to keep the language both easily readable by humans and consistently understood by computers and devices such as web browsers, parsers, etc., without XHTML's rigidity; and to remain backward-compatible with older software. HTML5 is intended to subsume not only HTML 4 but also XHTML 1 and DOM Level 2 HTML.[5]
 
 HTML5 includes detailed processing models to encourage more interoperable implementations; it extends, improves and rationalizes the markup available for documents and introduces markup and application programming interfaces (APIs) for complex web applications.[6] For the same reasons, HTML5 is also a candidate for cross-platform mobile applications, because it includes features designed with low-powered devices in mind.
 
@@ -91,7 +206,7 @@ Many new syntactic features are included. To natively include and handle multime
 
 
 	<article>
-		
+
 	</article>
 
 </section>
@@ -103,5 +218,3 @@ Many new syntactic features are included. To natively include and handle multime
 <footer> Copyright &copy; 2020 </footer>
 
 </html>
-
-
