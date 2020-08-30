@@ -1,0 +1,100 @@
+body {
+    background-color: lightgray;
+
+}
+
+
+header ul{
+	list-style: none;
+}
+
+li > a:visited, li > a:link{
+	text-decoration: none;
+	color: white;
+	background-color: green;
+	border: 1px solid blue;
+
+	display: block;
+	width: 200px;
+	text-align: center;
+	margin-bottom: 1px;
+
+}
+
+li > a:hover, li > a:active {
+
+	background-color: red;
+
+}
+
+
+ol li:nth-child(3) {
+	font-style: italic;
+}
+
+ol li:nth-child(3):hover {
+
+	font-size: 20;
+	color:red;
+}
+
+/* =========================== */
+
+h1 {
+	font-size: 40px;
+	color: black;
+}
+
+h1,h2 {
+	font-weight: bolder;
+
+}
+
+p > span {
+	text-decoration: underline;
+
+}
+
+
+
+.blue {
+	color: blue;
+	font-size: 18;
+
+}
+
+.highlight {
+	font-style: italic;
+	font-weight: bold;
+	background-color: yellow;
+}
+
+
+/* when an element has both blue & highlight classes  */
+.blue.highlight {
+	color: blue;
+	font-size: 18;
+	font-style: italic;
+	font-weight: bold;
+	background-color: yellow;
+}
+
+
+
+
+
+/*not very useful */
+#vital {
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+	background-color: red;
+
+}
+
+
+/* COMMENT: is like java and js */
+
+
+
+
