@@ -13,7 +13,7 @@ li > a:visited, li > a:link{
 	color: white;
 	background-color: green;
 	border: 1px solid blue;
-
+        
 	display: block;
 	width: 200px;
 	text-align: center;
@@ -56,6 +56,23 @@ p > span {
 }
 
 
+.fontstyle1 {
+
+    font-family: "Arial", Helvetica, sans-serif;
+
+}
+
+.fontstyle2 {
+    color: #0000ff;    /* hexadecimal code for R(00) G(00) B(ff)  */
+    font-style: italic;
+    font-weight: bold;
+    font-size: 36px; 
+    text-transform: Capitalize;
+    text-align: center;
+
+}
+
+
 
 .blue {
 	color: blue;
@@ -78,6 +95,8 @@ p > span {
 	font-weight: bold;
 	background-color: yellow;
 }
+
+
 
 
 
