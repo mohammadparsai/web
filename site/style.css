@@ -1,4 +1,7 @@
 
+
+
+
 *{
 /* star selector is a way to inherit a value to all elements have it*/
 /* this is to reset browser default padding and margins*/
@@ -125,6 +128,18 @@ section {
 }
 
 
+#vital {
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+	background-color: red;
+
+}
+
+
+
+/********************************* POSITIONNING *********************************/
+
 .floating1 {
 
 	float:left;
@@ -159,31 +174,80 @@ section {
 
     height: 100px;
     
-    /*allow it to has scroll bars*/
+    /*allow it to have scroll bars*/
     overflow: auto;  
-
-
 }
 	
 #content {
     background-color: lightgreen;
-    
-
 }	
 	
 
 
-/*not very useful */
-#vital {
-	color: white;
-	font-style: italic;
-	font-weight: bold;
-	background-color: red;
+
+
+
+#box2 {
+	position: relative;   
+	/* position of your element is now RELATED TO its original first place (last position), 
+	   first place was between <div> and <section> in our case,
+	   if it's "absolute", the position is measured from the top of our page */
+
+	left: 50px;        
+	top: 50px;
+	background-color: lightblue;
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+	clear: both;
 
 }
 
+.lbox {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	margin: 10px;
+	background-color: lightgreen;
+}
 
-/* COMMENT: is like java and js */
+
+
+/********************************* RESPONSIVE WEBSITE *********************************/
+
+/* Add this meta to the html to force the browsers to show our actual sizes in mobiles not their desired zooms
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+Most common layout for a responsive site is 12-column layout, CHECK Lecture 24 for an instance
+Also a good style sheet is Bootstrap, check out lectures 25 & 26 for it
+
+ /*
+
+
+
+/* Large-size devices: */
+@media (min-width: 1200px) {
+
+	#box2{
+		width: 600px;
+		height: 600px;
+
+	}
+}
+
+/* Medium-size devices: */
+@media (min-width: 600px) and (max-width: 1199px){
+
+	#box2{
+		width: 80%;
+		height: 600px;
+		
+
+	}
+}
+
 
 
 
